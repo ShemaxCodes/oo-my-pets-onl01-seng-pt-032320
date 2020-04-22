@@ -42,11 +42,19 @@ class Owner
   end 
   
   def buy_cat(name)
+<<<<<<< HEAD
     Cat.new(name, self)
   end 
   
   def buy_dog(name)
   Dog.new(name, self)
+=======
+     self.cats.name = name 
+  end 
+  
+  def buy_dog(name)
+    dogs << Dog.new(dogs, self)
+>>>>>>> 5b338787d869ffb6139aa36da7818f3ce1b03db0
   end 
     
   def walk_dogs
